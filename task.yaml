@@ -1,0 +1,38 @@
+# Tasks for the Giants:
+
+# Install a pre-existing Helm chart: Install a Helm chart from the Helm Hub or a Helm repository using the helm install command.
+
+# Update a Helm chart: Update a deployed Helm chart using the helm upgrade command.
+
+# Create a new Helm chart: Create a new Helm chart using the helm create command. This will generate a new chart template that you can customize.
+
+# Configure a Helm chart: Customize the values in a Helm chart by modifying the values.yaml file.
+
+# Rollback a Helm chart: Rollback to a previous version of a deployed Helm chart using the helm rollback command.
+
+
+# Creative tasks:
+# Create a custom HELM chart for given values.yaml file:
+
+# replicas: 1
+
+
+# image: nginx
+# nameOverride: "<yourName>-<appName>"
+# fullnameOverride: "<yourName>-<appName>-chart"
+
+
+# service:
+#   type: ClusterIP
+#   port: 80
+
+
+# ingress:
+#   enabled: false
+#   annotations: {}
+#     # kubernetes.io/ingress.class: nginx
+#   hosts:
+#     - host: chart-example.local
+#       paths:
+#         - path: /
+#           pathType: Prefix
